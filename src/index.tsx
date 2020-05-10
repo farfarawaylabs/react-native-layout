@@ -1,9 +1,6 @@
-import { NativeModules } from 'react-native';
+import Center from './components/Center';
+import Col from './components/Col';
+import Row from './components/Row';
+import { Alignment } from './components/enums';
 
-type ReactNativeLayoutType = {
-  multiply(a: number, b: number): Promise<number>;
-};
-
-const { ReactNativeLayout } = NativeModules;
-
-export default ReactNativeLayout as ReactNativeLayoutType;
+export { Alignment, Center, Col, Row };
