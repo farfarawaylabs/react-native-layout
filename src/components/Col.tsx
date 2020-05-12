@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ViewStyle } from 'react-native';
+import { View, ViewStyle, StyleProp } from 'react-native';
 import { Alignment } from './enums';
 
 type flexVerticalAlignmentOptions =
@@ -33,7 +33,7 @@ interface RowProps {
   /**
    * Additional styles to add or override default ones
    */
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
 }
 
 /**
