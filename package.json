@@ -1,6 +1,6 @@
 {
   "name": "@farfarawaylabs/react-native-layout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Layout components for React Native",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
