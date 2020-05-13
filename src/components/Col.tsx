@@ -31,6 +31,16 @@ export interface ColProps extends ViewProps {
   horizontalAlign?: Alignment;
 
   /**
+   * Specify the row height in pt or %
+   */
+  height?: number | string;
+
+  /**
+   * Specify the row width in pt or %
+   */
+  width?: number | string;
+
+  /**
    * Additional styles to add or override default ones
    */
   style?: StyleProp<ViewStyle>;
@@ -43,6 +53,8 @@ const Col: React.FC<ColProps> = ({
   style,
   size = 1,
   reverse = false,
+  width,
+  height,
   verticalAlign = Alignment.Start,
   horizontalAlign = Alignment.Start,
   children,
@@ -80,6 +92,8 @@ const Col: React.FC<ColProps> = ({
     flexDirection: order,
     justifyContent: verticalAlignmentStyle,
     alignItems: horizontalAlignmentStyle,
+    width: width,
+    height: height,
   };
   return (
     <View style={[alignStyles, style]} {...rest}>
