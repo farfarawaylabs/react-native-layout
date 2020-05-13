@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, ViewStyle, StyleProp } from 'react-native';
+import { View, ViewStyle, StyleProp, ViewProps } from 'react-native';
 
-interface CenterProps {
+export interface CenterProps extends ViewProps {
   /**
    * Additional styles to add or override default ones
    */

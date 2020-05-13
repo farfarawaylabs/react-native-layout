@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ViewStyle, StyleProp } from 'react-native';
+import { View, ViewStyle, StyleProp, ViewProps } from 'react-native';
 import { Alignment } from './enums';
 
 type flexVerticalAlignmentOptions =
@@ -9,7 +9,7 @@ type flexVerticalAlignmentOptions =
   | 'space-around'
   | 'space-between';
 
-interface RowProps {
+export interface ColProps extends ViewProps {
   /**
    * The relative size compared to other adjunct rows
    */
@@ -39,7 +39,7 @@ interface RowProps {
 /**
  * Align children using column layout
  */
-const Col: React.FC<RowProps> = ({
+const Col: React.FC<ColProps> = ({
   style,
   size = 1,
   reverse = false,

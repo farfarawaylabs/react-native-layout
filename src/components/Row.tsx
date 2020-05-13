@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ViewStyle, StyleProp } from 'react-native';
+import { View, ViewStyle, StyleProp, ViewProps } from 'react-native';
 import { Alignment } from './enums';
 
 type flexHorizontalAlignmentOptions =
@@ -9,7 +9,7 @@ type flexHorizontalAlignmentOptions =
   | 'space-around'
   | 'space-between';
 
-interface RowProps {
+export interface RowProps extends ViewProps {
   /**
    * The relative size compared to other adjunct rows
    */
