@@ -1,6 +1,6 @@
 # @farfarawaylabs/react-native-layout
 
-Layout components for React Native
+##This repository and package is depracated. Please use the newer version at: https://github.com/farfarawaylabs/react-native-easy-flex
 
 ## Layout
 
